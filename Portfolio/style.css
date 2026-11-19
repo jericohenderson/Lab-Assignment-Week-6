@@ -1,5 +1,4 @@
 
-
 h1 {
   color: rgb(31, 31, 34);
   text-align: center;
@@ -21,6 +20,7 @@ p {
   flex-direction: column;
   gap: 10px;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -29,3 +29,46 @@ ul {
   flex-direction: column;
   gap: 10px;
 }
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #18181b;
+  --link-color: #2563eb;
+  --btn-bg: #f4f4f5;
+  --btn-border: #d4d4d8;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f4f4f5;
+  --link-color: #60a5fa;
+  --btn-bg: #27272a;
+  --btn-border: #3f3f46;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+a {
+  color: var(--link-color);
+}
+
+#theme-toggle {
+  padding: 0.5rem 0.9rem;
+  background-color: var(--btn-bg);
+  color: var(--text-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
