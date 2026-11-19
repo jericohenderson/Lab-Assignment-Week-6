@@ -21,5 +21,5 @@ Gemini (for example code)
 
 
 
-
-Link to my HTML website: https://incredible-tarsier-699574.netlify.app/
+## Link to my website
+ https://incredible-tarsier-699574.netlify.app/
